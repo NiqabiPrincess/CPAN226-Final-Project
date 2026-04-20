@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#667eea" />
+        <title>Messenger</title>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1>Messenger</h1>
+                <div class="status-indicator">
+                    <span class="status-dot offline" id="statusDot"></span>
+                    <span class="status-text" id="statusText">Offline</span>
+                </div>
+            </header>
+
+            <main class="chat-area" id="chatArea">
+                <div class="empty-state">
+                    <p>No messages yet. Start a conversation!</p>
+                </div>
+            </main>
+
+            <footer class="messageInput-container">
+                <div class="input-wrapper">
+                    <input
+                        type="text"
+                        id="messageInput"
+                        class="messageInput"
+                        placeholder="Type a message..."
+                        autocomplete="off"
+                    />
+                    <button class="send-button" id="sendButton">Send</button>
+                </div>
+            </footer>
+        </div>
+
+        <script src="/crypto.js"></script>
+        <script src="/app.js"></script>
+    </body>
+</html>

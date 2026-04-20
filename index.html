@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Messenger</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1>Messenger</h1>
+                <div class="status-indicator">
+                    <span class="status-dot offline" id="statusDot"></span>
+                    <span class="status-text" id="statusText">Offline</span>
+                </div>
+            </header>
+
+            <main class="chat-area" id="chatArea">
+                <div class="empty-state">
+                    <p>No messages yet. Start a conversation!</p>
+                </div>
+            </main>
+
+            <footer class="messageInput-container">
+                <div class="input-wrapper">
+                    <input
+                        type="text"
+                        id="messageInput"
+                        class="messageInput"
+                        placeholder="Type a message..."
+                        autocomplete="off"
+                    />
+                    <button class="send-button" id="sendButton">Send</button>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
